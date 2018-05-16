@@ -5,6 +5,7 @@ version = '1.1.1'
 buildscript {
     repositories {
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 }
 
@@ -53,6 +54,9 @@ allprojects {
         compile "io.swagger:swagger-annotations:$swagger_annotations_version"
         compile "commons-validator:commons-validator:$commons_validator_version"
         compile "log4j:log4j:$log4j_version"
+
+        compile 'com.github.jitpack:gradle-simple:1.0'
+
         testCompile "junit:junit:$junit_version"
     }
 }
